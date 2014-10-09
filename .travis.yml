@@ -1,8 +1,9 @@
 language: python
 before_install:
 - sudo add-apt-repository --yes ppa:fontforge/fontforge
+- sudo add-apt-repository -y ppa:chris-lea/node.js
 - sudo apt-get update -qq
-- sudo apt-get install python-fontforge ttfautohint
+- sudo apt-get install python-fontforge ttfautohint nodejs
 - cp /usr/lib/python2.7/dist-packages/fontforge.* "$HOME/virtualenv/python2.7.8/lib/python2.7/site-packages"
 install:
 - pip install git+https://github.com/behdad/fontTools.git
@@ -10,15 +11,16 @@ install:
 - pip install git+https://github.com/googlefonts/fontbakery-cli.git
 - pip install jinja2
 before_script:
-- mkdir -p builds/build
-script: PATH=/home/travis/virtualenv/python2.7.8/bin/:$PATH fontbakery-build.py . 2>&1 | tee -a builds/build/buildlog.txt
+- mkdir -p builds/$TRAVIS_COMMIT
+- npm install -g bower
+script: (set -o pipefail; PATH=/home/travis/virtualenv/python2.7.8/bin/:$PATH fontbakery-build.py . 2>&1 | tee -a builds/$TRAVIS_COMMIT/buildlog.txt)
 branches:
   only:
   - master
 after_script:
-- PATH=/home/travis/virtualenv/python2.7.8/bin/:$PATH fontbakery-report.py builds/build
-- rm -rf builds/build/sources
-- rm -rf builds/build/build.state.yaml
+- PATH=/home/travis/virtualenv/python2.7.8/bin/:$PATH fontbakery-report.py builds/$TRAVIS_COMMIT
+- rm -rf builds/$TRAVIS_COMMIT/sources
+- rm -rf builds/$TRAVIS_COMMIT/build.state.yaml
 - PATH=/home/travis/virtualenv/python2.7.8/bin/:$PATH fontbakery-travis-deploy.py
 env:
   global:
