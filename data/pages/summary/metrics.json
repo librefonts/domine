@@ -1,0 +1,69 @@
+{
+  "data": {
+    "ymax": [
+      900, 
+      900
+    ], 
+    "hhea.ascent": [
+      900, 
+      900
+    ], 
+    "OS/2.sTypoAscender": [
+      900, 
+      900
+    ], 
+    "OS/2.usWinAscent": [
+      900, 
+      900
+    ], 
+    "ymin": [
+      -240, 
+      -240
+    ], 
+    "hhea.descent": [
+      -240, 
+      -240
+    ], 
+    "OS/2.sTypoDescender": [
+      -240, 
+      -240
+    ], 
+    "OS/2.usWinDescent": [
+      240, 
+      240
+    ], 
+    "hhea.lineGap": [
+      0, 
+      0
+    ], 
+    "OS/2.sTypoLineGap": [
+      0, 
+      0
+    ], 
+    "hhea total": [
+      1140, 
+      1140
+    ], 
+    "typo total": [
+      1140, 
+      1140
+    ], 
+    "win total": [
+      1140, 
+      1140
+    ], 
+    "UPM:Heights": [
+      "1000:1140", 
+      "1000:1140"
+    ], 
+    "UPM:Heights %": [
+      "113 %", 
+      "113 %"
+    ]
+  }, 
+  "headings": [
+    "Parameter          ", 
+    "Domine-Bold.ttf", 
+    "Domine-Regular.ttf"
+  ]
+}

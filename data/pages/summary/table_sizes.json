@@ -1,0 +1,63 @@
+{
+  "tables": [
+    "GDEF", 
+    "head", 
+    "loca", 
+    "name", 
+    "post", 
+    "OS/2", 
+    "fpgm", 
+    "GPOS", 
+    "maxp", 
+    "GSUB", 
+    "glyf", 
+    "prep", 
+    "cmap", 
+    "gasp", 
+    "hhea", 
+    "hmtx", 
+    "cvt "
+  ], 
+  "sizes": [
+    {
+      "Domine-Bold.ttf": {
+        "GDEF": 58, 
+        "head": 54, 
+        "loca": 930, 
+        "name": 4566, 
+        "OS/2": 96, 
+        "fpgm": 2928, 
+        "gasp": 8, 
+        "hhea": 36, 
+        "prep": 145, 
+        "hmtx": 1854, 
+        "GSUB": 636, 
+        "glyf": 95814, 
+        "GPOS": 16242, 
+        "cmap": 1152, 
+        "post": 32, 
+        "maxp": 32, 
+        "cvt ": 66
+      }, 
+      "Domine-Regular.ttf": {
+        "GDEF": 58, 
+        "head": 54, 
+        "loca": 930, 
+        "name": 4586, 
+        "OS/2": 96, 
+        "fpgm": 2928, 
+        "gasp": 8, 
+        "hhea": 36, 
+        "prep": 145, 
+        "hmtx": 1854, 
+        "GSUB": 636, 
+        "glyf": 92754, 
+        "GPOS": 15388, 
+        "cmap": 1152, 
+        "post": 32, 
+        "maxp": 32, 
+        "cvt ": 66
+      }
+    }
+  ]
+}

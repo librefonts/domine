@@ -1,0 +1,11 @@
+{
+  "gh_pages": "https://github.com/fontdirectory/domine/tree/gh-pages", 
+  "url": "https://github.com/fontdirectory/domine", 
+  "fontbakery": {
+    "tests_edit_url": "https://github.com/googlefonts/fontbakery-cli/edit/master/bakery_lint/tests", 
+    "tests_url": "https://github.com/googlefonts/fontbakery-cli/blob/master/bakery_lint/tests", 
+    "master_edit_url": "https://github.com/googlefonts/fontbakery-cli/edit/master", 
+    "master_url": "https://github.com/googlefonts/fontbakery-cli/blob/master", 
+    "repo_url": "https://github.com/googlefonts/fontbakery-cli"
+  }
+}
